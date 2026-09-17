@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vishal Consulting</title>
 
+
+<!-- ================= META PIXEL ================= -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1767012340874815');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1767012340874815&ev=PageView&noscript=1"/>
+</noscript>
+
+<!-- =============== END META PIXEL =============== -->
+
+
 <style>
+
 *{
     box-sizing:border-box;
 }
 
-html,body{
+html,
+body{
     margin:0;
     width:100%;
     min-height:100%;
@@ -22,229 +50,402 @@ body{
     background:#050505;
     color:#fff;
     font-family:Arial,Helvetica,sans-serif;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     overflow:hidden;
 }
 
+
 .container{
+
     width:100%;
     max-width:900px;
+
     min-height:100vh;
+
     display:flex;
     flex-direction:column;
+
     justify-content:center;
     align-items:center;
+
     text-align:center;
+
     padding:25px;
 }
 
-/* LOGO */
+
+/* ================= LOGO ================= */
 
 .logo{
+
     width:120px;
     height:120px;
+
     border-radius:50%;
+
     background:#f6f5e9;
+
     border:3px solid #c89a3d;
+
     color:#111;
+
     display:flex;
+
     justify-content:center;
     align-items:center;
+
     flex-direction:column;
+
     margin-bottom:35px;
-    box-shadow:0 0 25px rgba(255,202,90,.15);
+
+    box-shadow:
+    0 0 25px rgba(255,202,90,.15);
 }
 
+
 .logo a{
+
     color:#111;
+
     text-decoration:none;
+
     font-size:22px;
+
     font-weight:900;
+
     letter-spacing:1px;
 }
 
+
 .logo small{
+
     display:block;
+
     font-size:7px;
+
     letter-spacing:2px;
+
     margin-top:4px;
+
     font-weight:500;
 }
 
-/* HEADING */
+
+
+/* ================= HEADING ================= */
 
 h1{
+
     font-size:clamp(32px,6vw,55px);
+
     line-height:1.08;
+
     margin:0 0 22px;
+
     font-weight:800;
 }
 
+
 .highlight{
+
     color:#ffd45b;
+
     font-size:clamp(19px,3vw,28px);
+
     font-weight:700;
+
     margin-bottom:32px;
 }
 
+
 .question{
+
     font-size:clamp(27px,4vw,40px);
+
     margin:0 0 12px;
+
     font-weight:800;
 }
 
+
 .sub{
+
     font-size:18px;
+
     margin:0 0 20px;
+
     color:#eee;
 }
 
-/* TIMER */
+
+
+/* ================= TIMER ================= */
 
 .timer{
+
     color:#ffd45b;
+
     font-size:16px;
+
     font-weight:700;
+
     margin-bottom:14px;
 }
 
-/* BUTTON */
+
+
+/* ================= TELEGRAM BUTTON ================= */
 
 .telegram-btn{
+
     width:min(650px,100%);
+
     min-height:62px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     gap:10px;
 
     background:#f2bd2e;
+
     color:#111;
+
     text-decoration:none;
 
     border-radius:15px;
 
     font-size:21px;
+
     font-weight:800;
 
-    box-shadow:0 6px 20px rgba(242,189,46,.18);
+    box-shadow:
+    0 6px 20px rgba(242,189,46,.18);
 
     transition:.2s;
 }
 
+
 .telegram-btn:hover{
+
     transform:translateY(-2px);
+
     filter:brightness(1.08);
 }
 
-/* MOBILE */
+
+
+/* ================= MOBILE ================= */
 
 @media(max-width:600px){
 
     .container{
+
         padding:20px;
     }
 
+
     .logo{
+
         width:105px;
         height:105px;
+
         margin-bottom:30px;
     }
 
+
     .logo a{
+
         font-size:19px;
     }
 
+
     h1{
+
         font-size:34px;
+
         margin-bottom:18px;
     }
 
+
     .highlight{
+
         font-size:19px;
+
         margin-bottom:28px;
     }
 
+
     .question{
+
         font-size:29px;
     }
 
+
     .sub{
+
         font-size:16px;
     }
 
+
     .telegram-btn{
+
         min-height:58px;
+
         font-size:19px;
     }
+
 }
+
 </style>
+
 </head>
 
 
 <body>
 
+
 <div class="container">
 
-    <!-- LOGO -->
+
+    <!-- ================= LOGO ================= -->
+
     <div class="logo">
+
         <a href="logo.html">
+
             VISHAL
-            <small>CONSULTING</small>
+
+            <small>
+                CONSULTING
+            </small>
+
         </a>
+
     </div>
 
 
-    <!-- MAIN CONTENT -->
+
+    <!-- ================= MAIN CONTENT ================= -->
 
     <h1>
+
         The most premium asset in<br>
+
         2026?
+
     </h1>
 
+
     <div class="highlight">
+
         🔥 A Refined Skill Set 📈
+
     </div>
 
+
     <h2 class="question">
+
         WANNA LEARN?
+
     </h2>
 
+
     <p class="sub">
+
         Then click on the below link 👇
+
     </p>
 
 
-    <!-- TIMER -->
+
+    <!-- ================= TIMER ================= -->
 
     <div class="timer">
-        Opening in <span id="seconds">10</span> seconds…
+
+        Opening in
+
+        <span id="seconds">
+            10
+        </span>
+
+        seconds…
+
     </div>
 
 
-    <!-- TELEGRAM -->
+
+    <!-- ================= TELEGRAM BUTTON ================= -->
 
     <a
+
         class="telegram-btn"
+
         id="telegramBtn"
+
         href="https://t.me/vishalconsulting?text=Hello%20Mam%2C%0ASend%20Me%20Your%20Work%20Details"
+
     >
+
         ➤ &nbsp; Telegram Now
+
     </a>
+
 
 </div>
 
 
+
 <script>
 
-let seconds = 10;
-
-const counter = document.getElementById("seconds");
+/* ==========================================
+   TELEGRAM LINK
+========================================== */
 
 const telegramLink =
 "https://t.me/vishalconsulting?text=Hello%20Mam%2C%0ASend%20Me%20Your%20Work%20Details";
+
+
+/* ==========================================
+   TELEGRAM BUTTON CLICK TRACKING
+========================================== */
+
+document
+.getElementById("telegramBtn")
+.addEventListener("click", function(){
+
+    /*
+      Meta Pixel Contact event
+    */
+
+    if(typeof fbq === "function"){
+
+        fbq(
+            'track',
+            'Contact'
+        );
+
+    }
+
+});
+
+
+
+/* ==========================================
+   10 SECOND AUTO REDIRECT
+========================================== */
+
+let seconds = 10;
+
+const counter =
+document.getElementById("seconds");
 
 
 const timer = setInterval(function(){
@@ -253,17 +454,36 @@ const timer = setInterval(function(){
 
     counter.innerText = seconds;
 
+
     if(seconds <= 0){
 
         clearInterval(timer);
 
-        window.location.href = telegramLink;
+
+        /*
+          Auto redirect ko bhi Contact event
+          ke saath track karna
+        */
+
+        if(typeof fbq === "function"){
+
+            fbq(
+                'track',
+                'Contact'
+            );
+
+        }
+
+
+        window.location.href =
+        telegramLink;
 
     }
 
 },1000);
 
 </script>
+
 
 </body>
 </html>
