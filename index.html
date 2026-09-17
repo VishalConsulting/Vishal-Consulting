@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vishal Consulting</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #050505;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(860px, 100%);
+      min-height: 780px;
+      border: 1px solid #7d6a42;
+      border-radius: 28px;
+      padding: 58px 34px 44px;
+      text-align: center;
+
+      background:
+        radial-gradient(
+          circle at 50% 22%,
+          #202020 0%,
+          #0d0d0d 38%,
+          #050505 72%
+        );
+
+      box-shadow: 0 0 45px rgba(255, 190, 55, 0.08);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* LOGO */
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+
+      background: #f6f5e9;
+      color: #111;
+
+      border: 3px solid #c89a3d;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 52px;
+
+      box-shadow: 0 0 25px rgba(255, 202, 90, 0.18);
+
+      overflow: hidden;
+    }
+
+    .logo a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .logo small {
+      display: block;
+      font-size: 8px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+
+    /* MAIN HEADING */
+    h1 {
+      font-size: clamp(36px, 6vw, 60px);
+      line-height: 1.05;
+      margin: 0 0 34px;
+      font-weight: 800;
+    }
+
+    /* GOLD TEXT */
+    .highlight {
+      font-size: clamp(20px, 3.2vw, 31px);
+      font-weight: 700;
+      color: #ffd45b;
+      margin-bottom: 52px;
+    }
+
+    /* QUESTION */
+    .question {
+      font-size: clamp(28px, 4.5vw, 45px);
+      font-weight: 800;
+      margin: 0 0 20px;
+    }
+
+    .sub {
+      font-size: 20px;
+      color: #eee;
+      margin: 0 0 28px;
+    }
+
+    /* TIMER */
+    .timer {
+      font-size: 18px;
+      color: #ffd45b;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    /* TELEGRAM BUTTON */
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      width: min(720px, 100%);
+      min-height: 76px;
+
+      border-radius: 18px;
+
+      background: #f2bd2e;
+      color: #151515;
+
+      text-decoration: none;
+
+      font-size: 25px;
+      font-weight: 800;
+
+      box-shadow: 0 8px 28px rgba(242, 189, 46, 0.20);
+
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+    }
+
+    .telegram {
+      font-size: 26px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+
+      .card {
+        min-height: 700px;
+        padding: 42px 20px;
+      }
+
+      .logo {
+        width: 125px;
+        height: 125px;
+        margin-bottom: 42px;
+      }
+
+      .btn {
+        font-size: 20px;
+        min-height: 66px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="card">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="logo.html" aria-label="Open logo page">
+        VISHAL
+        <small>CONSULTING</small>
+      </a>
+    </div>
+
+    <!-- HEADING -->
+    <h1>
+      The most premium asset in<br>
+      2026?
+    </h1>
+
+    <!-- HIGHLIGHT -->
+    <div class="highlight">
+      🔥 A Refined Skill Set 📈
+    </div>
+
+    <!-- QUESTION -->
+    <h2 class="question">
+      WANNA LEARN?
+    </h2>
+
+    <p class="sub">
+      Then click on the below link 👇
+    </p>
+
+    <!-- TIMER -->
+    <div class="timer">
+      Opening in <span id="seconds">10</span> seconds…
+    </div>
+
+    <!-- TELEGRAM BUTTON -->
+    <a
+      id="telegramBtn"
+      class="btn"
+      href="https://t.me/vishalconsulting?text=Hello%20Mam%2C%0ASend%20Me%20Your%20Work%20Details"
+    >
+      <span class="telegram">➤</span>
+      Telegram Now
+    </a>
+
+  </main>
+
+
+  <script>
+
+    /* TELEGRAM LINK */
+    const target =
+      "https://t.me/vishalconsulting?text=Hello%20Mam%2C%0ASend%20Me%20Your%20Work%20Details";
+
+
+    /* 10 SECOND TIMER */
+    let seconds = 10;
+
+    const counter =
+      document.getElementById("seconds");
+
+
+    const timer =
+      setInterval(function () {
+
+        seconds--;
+
+        counter.textContent = seconds;
+
+
+        if (seconds <= 0) {
+
+          clearInterval(timer);
+
+          window.location.href = target;
+
+        }
+
+      }, 1000);
+
+  </script>
+
+</body>
+</html>
